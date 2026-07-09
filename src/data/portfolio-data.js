@@ -21,10 +21,10 @@ export const PERSONAL = {
 };
 
 export const STATS = [
-  { value: "3+", label: "Projects" },
+  { value: "4+", label: "Projects" },
   { value: "120+", label: "Bugs Analyzed" },
   { value: "6", label: "Semester" },
-  { value: "2", label: "Tech Stacks" },
+  { value: "3", label: "Tech Stacks" },
 ];
 
 export const EDUCATION = [
@@ -55,6 +55,15 @@ export const PROJECTS = [
     category: "fullstack",
     link: "#",
   },
+  {
+    title: "Microservice E-Commerce Platform",
+    role: "Fullstack Developer",
+    description:
+      "Membangun platform e-commerce berbasis arsitektur Microservice dengan 3 service terpisah: User Service (Express.js + JWT Auth), Product Service (Laravel + MySQL), dan Order Service (Express.js). Menerapkan prinsip Database-Per-Service, JWT shared-secret authentication (HS256), dan inter-service communication via REST API dengan forwarding token.",
+    tags: ["Node.js", "Express.js", "Laravel", "MySQL", "JWT", "Microservice", "REST API"],
+    category: "fullstack",
+    link: "https://github.com/MohammadFaisalNurHidayat/UAS-SOFTWARE-CONSTRUCTION_Mohammad-Faisal-Nur-Hidayat_232410103091",
+  },
 ];
 
 export const RESEARCH_PROJECTS = [
@@ -64,7 +73,6 @@ export const RESEARCH_PROJECTS = [
     description:
       "Mengembangkan model prediksi parameter fermentasi kopi Arabika menggunakan pendekatan Stacking Ensemble (Random Forest + Artificial Neural Network). Menerapkan K-Fold Out-of-Fold (OOF) prediction untuk generalisasi model, serta membangun Arrhenius-based kinetic dataset generator untuk augmentasi data eksperimen.",
     methodology: "RF+ANN Stacking Ensemble, K-Fold OOF, Arrhenius-based Kinetic Dataset Generator",
-    outcome: "AI-detection <20%, draft jurnal JIK (Jurnal Ilmu Komputer)",
     tags: ["Random Forest", "ANN", "Stacking", "K-Fold", "Arrhenius", "Python"],
   },
   {
@@ -73,7 +81,6 @@ export const RESEARCH_PROJECTS = [
     description:
       "Menerapkan arsitektur YOLOv8s yang dimodifikasi dengan Wise-IoU v3 Loss Function untuk meningkatkan performa deteksi objek pada citra aerial (VisDrone2019 dataset). Fokus pada peningkatan akurasi deteksi objek kecil dengan occlusion tinggi pada skenario pandangan udara.",
     methodology: "YOLOv8s, WIoUv3 (Wise-IoU v3) Loss Function, VisDrone2019 Dataset",
-    outcome: "Peningkatan mAP pada deteksi objek kecil di citra aerial",
     tags: ["YOLO", "Computer Vision", "Object Detection", "WIoU", "Deep Learning"],
   },
   {
@@ -82,7 +89,6 @@ export const RESEARCH_PROJECTS = [
     description:
       "Merancang pendekatan hybrid Genetic Algorithm dan XGBoost untuk memprediksi pergerakan kurs USD/IDR. Laporan disusun dalam format IMRAD (Introduction, Methods, Results, and Discussion) dengan rujukan minimal 3 artikel Scopus-indexed.",
     methodology: "Genetic Algorithm + XGBoost Hybrid, IMRAD Report Format",
-    outcome: "Laporan IMRAD lengkap, 3 referensi Scopus-indexed",
     tags: ["Genetic Algorithm", "XGBoost", "Time Series", "IMRAD", "Evolutionary Computing"],
   },
 ];

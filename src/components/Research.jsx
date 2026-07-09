@@ -33,15 +33,11 @@ function ResearchCard({ project, index }) {
 
           <p className="research-item__desc">{project.description}</p>
 
-          {/* Methodology & Outcome pills */}
+          {/* Methodology pill */}
           <div className="research-item__meta">
             <div className="research-meta">
               <span className="research-meta__label">Metodologi</span>
               <span className="research-meta__value">{project.methodology}</span>
-            </div>
-            <div className="research-meta">
-              <span className="research-meta__label">Outcome</span>
-              <span className="research-meta__value">{project.outcome}</span>
             </div>
           </div>
 

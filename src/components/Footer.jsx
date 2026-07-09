@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__inner">
           <p className="footer__text">
-            Built with React, Vite, and Framer Motion.
+            Thanks for visiting my portfolio.
           </p>
 
           <div className="footer__socials">

@@ -47,7 +47,7 @@ export default function Navbar() {
       <div className="navbar__inner">
         {/* Logo */}
         <a href="#hero" className="navbar__logo" onClick={(e) => handleLinkClick(e, '#hero')}>
-          <span>Faisal</span>.dev
+          <span>Faisal</span><span style={{ color: 'var(--text-muted)' }}>.dev</span>
         </a>
 
         {/* Desktop Links */}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ExternalLink } from 'lucide-react';
 import { PROJECTS } from '../data/portfolio-data';
 
 const FILTERS = [
@@ -68,7 +69,20 @@ export default function Projects() {
                 transition={{ duration: 0.35, delay: i * 0.08 }}
               >
                 <div className="project-card">
-                  <span className="project-card__role">{project.role}</span>
+                  <div className="project-card__header">
+                    <span className="project-card__role">{project.role}</span>
+                    {project.link && project.link !== '#' && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-card__link-icon"
+                        aria-label={`View ${project.title} on GitHub`}
+                      >
+                        <ExternalLink size={16} />
+                      </a>
+                    )}
+                  </div>
                   <h3 className="project-card__title">{project.title}</h3>
                   <p className="project-card__desc">{project.description}</p>
                   <div className="project-card__tags">
